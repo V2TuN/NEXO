@@ -18,10 +18,10 @@ PAGE = r"""<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
 <title>NEXO Console</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2.5a13.5 13.5 0 1 0 13.06 17.02 11 11 0 0 1-14.58-14.58A13.6 13.6 0 0 1 16 2.5Z' fill='%23d8e0ee'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='5' y1='5' x2='35' y2='35' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2322d3ee'/%3E%3Cstop offset='.52' stop-color='%233b82f6'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M8 29V11.5c0-2.2 2.8-3.3 4.35-1.65L31.8 29.5c1.55 1.65 4.35.55 4.35-1.65V11' fill='none' stroke='url(%23g)' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <style>
 :root{--bg:#0a0c10;--bg2:#10131a;--sur:#12151c;--sur2:#171b24;--bd:#1e2430;--bd2:#2a3242;
---tx:#e7ebf3;--dim:#9aa4b8;--fnt:#5d6678;--acc:#d8e0ee;--accd:#0b0d11;--blu:#6f9bff;
+--tx:#e9f7ff;--dim:#9bb4c8;--fnt:#5f7182;--acc:#22d3ee;--accd:#061016;--blu:#60a5fa;--vio:#a855f7;
 --grn:#4ecb95;--amb:#e3b341;--red:#ef6b73;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;--r:10px;--rs:7px}
 *{box-sizing:border-box}html,body{height:100%}
@@ -56,12 +56,12 @@ a{color:var(--blu);text-decoration:none}
 .bnav .ni{flex:1;flex-direction:column;gap:2px;font-size:10px;align-items:center;padding:6px 0}}
 .bnav{display:none}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:8px 13px;border-radius:var(--rs);border:1px solid var(--bd2);background:var(--sur2);color:var(--tx);font:600 13px var(--sans);cursor:pointer;white-space:nowrap}
-.btn:hover{background:#1c212c;border-color:#37415a}.btn:disabled{opacity:.45;cursor:not-allowed}
-.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--accd)}.btn.pri:hover{background:#e6ecf7}
+.btn:hover{background:#172536;border-color:#2d5272}.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.pri{background:linear-gradient(135deg,var(--acc),var(--blu));border-color:transparent;color:var(--accd)}.btn.pri:hover{filter:brightness(1.08)}
 .btn.dng{color:var(--red);border-color:rgba(239,107,115,.35)}.btn.dng:hover{background:rgba(239,107,115,.09)}
 .btn.sm{padding:5px 9px;font-size:12px}
 .inp{width:100%;padding:9px 12px;background:var(--bg2);color:var(--tx);border:1px solid var(--bd2);border-radius:var(--rs);font:400 13.5px var(--sans)}
-.inp:focus{outline:none;border-color:var(--blu);box-shadow:0 0 0 3px rgba(111,155,255,.15)}
+.inp:focus{outline:none;border-color:var(--blu);box-shadow:0 0 0 3px rgba(96,165,250,.16)}
 .fld{margin-bottom:14px}.fld label{display:block;font-size:12px;font-weight:600;color:var(--dim);margin-bottom:5px}
 .card{background:var(--sur);border:1px solid var(--bd);border-radius:var(--r);padding:16px}
 .card h3{margin:0 0 6px;font-size:13.5px}
