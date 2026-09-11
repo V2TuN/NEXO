@@ -1,0 +1,19 @@
+"""NEXO Worker runtime info."""
+from __future__ import annotations
+
+import os
+
+APP_NAME = "NEXO Worker"
+
+
+def version() -> str:
+    return os.environ.get("NEXO_WORKER_VERSION", "1.0.0")
+
+
+def info() -> dict:
+    return {
+        "name": APP_NAME,
+        "version": version(),
+        "build": os.environ.get("NEXO_WORKER_BUILD", "dev"),
+        "node": os.environ.get("NEXO_NODE_ID", "local"),
+    }

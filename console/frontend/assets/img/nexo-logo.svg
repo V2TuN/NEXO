@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="NEXO logo">
+  <defs>
+    <linearGradient id="nexoBlue" x1="30" y1="220" x2="225" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset=".5" stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="nexoLight" x1="55" y1="55" x2="190" y2="205" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#glow)">
+    <path fill="url(#nexoBlue)" d="M48 47c0-14 16-22 27-13l70 57 35-72c7-14 28-10 28 6v125c0 14-16 22-27 13l-70-57-35 72c-7 14-28 10-28-6V47z"/>
+    <path fill="url(#nexoLight)" d="M48 47c0-14 16-22 27-13l70 57-22 45L48 83V47z" opacity=".72"/>
+  </g>
+</svg>
